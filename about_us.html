@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Bootstrap Theme Company Page</title>
+  <title>About Us | RooH - Ek Muheem</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -25,11 +25,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage"><img src="logo.png" height=35px></a>
+      <a class="navbar-brand" href="newfront.html"><img src="logo.png" height=35px></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
+        <li><a href="newfront.html">HOME</a></li>
+        <li><a href="#mypage">ABOUT</a></li>
         <li><a href="#services">INITIATIVES</a></li>
         <li><a href="#portfolio">WHO WE ARE</a></li>
         <li><a href="#pricing">HOW CAN YOU HELP</a></li>
@@ -345,10 +346,10 @@ $(document).ready(function(){
 </script>
 
 <script type="text/javascript">
-var target = ($("#about").offset().top)-20;
+var target = $("#about").offset().top;
   var interval = setInterval(function() {
     if ($(window).scrollTop() >= target) {
-         $(".navbar").delay(0).animate({ backgroundColor: "rgb(244,81,30)"},"fast");
+         $(".navbar").delay(0).animate({ backgroundColor: "rgba(244,81,30,0.7)"},"fast");
         clearInterval(interval);
     }
     else{
@@ -364,7 +365,7 @@ var target = $("#about").offset().top;
         clearInterval(interval);
     }
     else{
-      $(".navbar").animate({ backgroundColor: "rgb(244,81,30)"},"fast");
+      $(".navbar").animate({ backgroundColor: "rgba(244,81,30,0.7)"},"fast");
     }
   }, 250);
 </script>
