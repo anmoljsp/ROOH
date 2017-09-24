@@ -1,145 +1,372 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>
-Rooh|Ek Muheem
-</title>
-<meta charset="utf-8">
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style>
-	@media (min-width: 768px) {
-  .navbar-collapse {
-    height: auto;
-    border-top: 0;
-    box-shadow: none;
-    max-height: none;
-    padding-left:0;
-    padding-right:0;
-  }
-  .navbar-collapse.collapse {
-    display: block !important;
-    width: auto !important;
-    padding-bottom: 0;
-    overflow: visible !important;
-  }
-  .navbar-collapse.in {
-    overflow-x: visible;
-  }
-.navbar
-{
-	max-width:300px;
-	margin-right: 0;
-	margin-left: 0;
-}	
-.class1 a:hover{
-  text-decoration: underline;
-  background-color: #FF851B;
-}
-.navbar-nav,
-.navbar-nav > li,
-.navbar-left,
-.navbar-right,
-.navbar-header
-{float:none !important;}
+  <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
 
-.navbar-right .dropdown-menu {left:0;right:auto;}
-.navbar-collapse .navbar-nav.navbar-right:last-child {
-    margin-right: 0;
-}
-}
-</style>
 </head>
-<body>
-	<div class="row">
-		<div class="col-sm-2">
-      <nav class="navbar navbar-default" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"></a>
-        </div>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="30" >
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="user.html"><img src="logo.png" width="100%"></a></li>
-            <li ><a href="user.html">HOME</a></li>
-            <li class="dropdown" onclick="myfunction()" id="drop1">
-              <a href="" class="dropdown-toggle active" data-toggle="dropdown">WHO WE ARE<span class="  glyphicon glyphicon-triangle-right" style="font-size:75%;"></span></a>
-              <ul class="dropdown-menu" id="drop" style="top: 0px;left: 100%;" > 
-                <li><a href="#" class="class1">About Rooh</a></li>
-                <li><a href="#" class="class1">The Little Ones</a></li>
-                <li><a href="#" class="class1">Volunteers</a></li>
-                <li><a href="#" class="class1">Alumni</a></li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav" id="myfun" style="background-color:#FF851B;">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" onclick="document.getElementById('myfun').style.background-color='#FF851B'">OUR INITIATIVES<span class="  glyphicon glyphicon-triangle-right" style="font-size:75%;"></span></a>
-              <ul class="dropdown-menu" style="top: 0px;left: 100%;background-color:#FF851B;">
-                <li><a href="#" class="class1">Activities</a></li>
-                <li><a href="#" class="class1">Hoxgene</a></li>
-                <li><a href="#" class="class1">Sponsor A Child</a></li>
-                <li><a href="#" class="class1">Bookshelf</a></li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="nav navbar-nav">
-            <li><a href="#">GALLERY</a></li>
-            <li><a href="#">BLOG</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </nav>
+<nav class="navbar navbar-default navbar-fixed-top" id="navig">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"><img src="logo.png" height=35px></a>
     </div>
-    <div class="col-sm-9" style="padding:0px;margin:0px;">
-      <div style="text-align:center;font-family:chiller;background-image:url('IMG_1807.jpg');background-size:100% 100%;width:100%;height:45%;padding:0px;margin:0px;opacity:0.85;">
-        <p style="font-size:450%;font-family:Purisa,Papyrus,fantasy;text-decoration:bold;font-weight:bold;color:#001f3f;position: relative;top: 100%;-ms-transform: translateY(-100%);-webkit-transform: translateY(-100%);transform: translateY(-100%);opacity:1;">WHO WE ARE</p>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">INITIATIVES</a></li>
+        <li><a href="#portfolio">WHO WE ARE</a></li>
+        <li><a href="#pricing">HOW CAN YOU HELP</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="row" style="padding:0px;margin:0px;top:0px;">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top:0px;padding:0px;background-color:black;width:100%;">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="Indian-children.jpg" width=100% style="opacity:0.6;" alt="Chania" height=80%>
+        <div class="carousel-caption" >
+          <h1 id="h1" class="slideanim">Reliable</h1>
+          <h4 style="font-style:italic;" id="h4" class="slideanim">You may forget, But we remember!</h4>
+        </div>
       </div>
-      <div class="row" style="font-size:150%;margin:0px 0% 0px 0%;text-align:center;">
-        <div class="col-sm-3" style="background-color:#001f3f;padding:1% 0px 1% 0px;" >
-          <a href="about_us.html">ABOUT US</a>
-        </div>
-        <div class="col-sm-3" style="background-color:#001f3f;padding:1% 0px 1% 0px;">
-          <a href="#">THE LITTLE ONES</a>
-        </div>
-        <div class="col-sm-3" style="background-color:#001f3f;padding:1% 0px 1% 0px;">
-          <a href="#">VOLUNTEERS</a>
-        </div>
-        <div class="col-sm-3" style="background-color:#001f3f;padding:1% 0px 1% 0px;">
-          <a href="#" >ALUMNI</a>
+
+      <div class="item">
+        <img src="Indian-children(1).jpg" width=100% style="opacity:0.6;" alt="Chania">
+        <div class="carousel-caption">
+          <h1>Fullproof</h1>
+          <h4 style="font-style:italic;">Our double hash key encrypted datbase system provides full proof security to your accounts.</h4>
         </div>
       </div>
-      <div class="row" style="padding:0px;margin:15px;">
-          <p style="padding:0px;margin:0px;font-size:150%;font-family: Perpetua,Baskerville,"Big Caslon","Palatino Linotype",Palatino,"URW Palladio L","Nimbus Roman No9 L",serif;">ROOH Ek Muheem, a social and cultural society, is working to provide a better life to underprivileged children. Ours is an organization, which helps the children who are socially and economically backward and are unable to afford quality education themselves. We sponsor their studies by collecting funds or arranging for a underwriter.<br>
-
-          Its foundation was laid in the year 2011 by Mr. Abhishek Chauhan and team, alumni of NIT Kurukshetra. Since then 54 students have been provided education in a private school,Nivedita Public School. Total expenditure so far is approximately 2,70,000 INR.<br>
-
-          We promote local cooperation and also have a significant impact on the regional dissemination of ideas, values and knowledge.<br>
-
-          India is home to 19% of the world’s children. What this means is that India has the world’s largest number of youngsters. The NOT-SO-GOOD news is that India also has 1/3rd of the world’s illiterate population. It’s not as though literacy levels have not increased, but rather that the rate of increase is rapidly slowing.<br>
-
-          We are very much familiar with the fundamental right to education i.e. RTE which is THE RIGHT OF CHILDREN TO FREE AND COMPULSARY EDUCATION, enacted on 4 August, 2009 which describes the modalities of free education.<br>
-
-          The RTE ACT doesn’t do enough justice to its name. It’s seems to be an unassailable fact that the RTE act appears, to be on paper at least, to be an ideal solution to the problems of education in India. However, it’s implementation too has been FAULTY.<br>
-
-          To combat this worrisome trend, we the ROOH members, have realized the responsibility on our part to provide education being the responsible citizens of India. “The reality is that there is still a long way to go”.<br>
-
-          Beside education we are actively involved in other social services. We held Blood Donation Camp,Awareness Programs, Energy Conservation Drive and Many Educational Workshops. We also conduct various events and competitions during College's Cultural and Techinal Fests. Below is the glimpse of our Programmes.</p>
+    
+      <div class="item">
+        <img src="home.jpg" style="opacity:0.6;" alt="Chania" width=100%>
+        <div class="carousel-caption">
+          <h1>Secured</h1>
+          <h4 style="font-style:italic;">You can bank on us and believe that we won't fail your belief.</h4>
+        </div>
       </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+
+<div class="container-fluid bg-grey" id="about">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong> Our mission is to provide a high quality education to all those who are unable to exercise that fundamental Right of Education due to financial and social constraints. We strive towards our goal of a Kurukshetra and a India where the RTE is realized in its true form.</h4><br>
+      <p><strong>VISION:</strong> Our vision is to admit the students into a full-fledged public school with modern amenities which is compliant to the needs of current technical scenario so that they can learn, grow, earn and break the vicious cycle of poverty. We also envision them to be active and diverse in extra co-currilar activities and to be able to learn and pursue their true passions.</p>
+      <p style="color:#f4511e;float:right;"><a href="about_us.html" style="color:#f4511e;">Continue Reading...</a></p>
     </div>
   </div>
 </div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>INITIATIVES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-piggy-bank logo-small"></span>
+      <h4>SPONSOR A CHILD</h4>
+      <p>Become a part of the movement..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-user logo-small"></span>
+      <h4>T-SHIRTS</h4>
+      <p>Wear your Institution with pride..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-tint logo-small"></span>
+      <h4>BLOOD DONATION CAMP</h4>
+      <p>Karke dekho..Acha lagta h..</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>HOXGENE</h4>
+      <p>Donate for free while you buy..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+      <h4>SWACCH BHARAT ABHIYAAN</h4>
+      <p>Make this planet greener to live life cleaner..</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-apple logo-small"></span>
+      <h4 style="color:#303030;">MAKE A WISH</h4>
+      <p>Help those who need it..</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>The Young Ones</h2><br>
+  <h4>The smiles we work for!</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="paris.jpg" alt="Paris" width="400" height="300">
+        <p><strong>Paris</strong></p>
+        <p>Yes, we built Paris</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="newyork.jpg" alt="New York" width="400" height="300">
+        <p><strong>New York</strong></p>
+        <p>We built New York</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
+        <p><strong>San Francisco</strong></p>
+        <p>Yes, San Fran is ours</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>COMMENTS</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"They think about the forgotten lot in today's world where people don't look out for others."<br><span>Michael Roe, Principal, Nivedita Public School</span></h4>
+      </div>
+      <div class="item">
+        <h4>"The dedication of the team and the enthusiasm of the whole student community of NIT Kurukshetra for the society is exceptional."<br><span>John Doe, Sr. Health Officer, Rohtak Red Cross Society</span></h4>
+      </div>
+      <div class="item">
+        <h4>"We work each year to be able to help and make a difference in more and more children's life."<br><span>Naman Goyal & Shubham Sharma, President & Placed, RooH</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div style="background-image:url('Indian-children.jpg');background-repeat:no-repeat;background-attachment:fixed;background-size:cover;">
+<div id="pricing" class="container-fluid" style="background-color:rgba(0,0,0,0);">
+  <div class="text-center">
+    <h2>What WE Have Been Upto</h2>
+    <h4>A breif look at all the past events we have held.</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Lorem</p>
+          <p><strong>15</strong> Ipsum</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$19</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Read More...</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Lorem</p>
+          <p><strong>25</strong> Ipsum</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$29</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Read More...</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$49</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Read More...</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+</div>
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> NIT Kurukshetra, Thanesar, Haryana, India</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +91 90 34 503669</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> info@rooh.org.in</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <form action="MAILTO:anmoljsp@gmail.com" method="POST" enctype="text/plain">
+        <fieldset>
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+      </fieldset>
+    </form>
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide1");
+        }
+    });
+  });
+})
+</script>
+
 <script type="text/javascript">
-  function myfun(){}
+var target = ($("#about").offset().top)-20;
+  var interval = setInterval(function() {
+    if ($(window).scrollTop() >= target) {
+         $(".navbar").delay(0).animate({ backgroundColor: "rgb(244,81,30)"},"fast");
+        clearInterval(interval);
+    }
+    else{
+      $(".navbar").delay(0).animate({backgroundColor: "rgba(244,81,30,0)"},"fast");
+    }
+  },250);
+</script>
+<script type="text/javascript">
+var target = $("#about").offset().top;
+  var interval = setInterval(function() {
+    if ($(window).scrollTop() < target) {
+         $(".navbar").animate({backgroundColor: "rgba(244,81,30,0)"},"fast");
+        clearInterval(interval);
+    }
+    else{
+      $(".navbar").animate({ backgroundColor: "rgb(244,81,30)"},"fast");
+    }
+  }, 250);
 </script>
 </body>
 </html>
