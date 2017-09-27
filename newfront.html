@@ -12,6 +12,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -52,10 +54,10 @@
     <div class="carousel-inner" role="listbox">
 
       <div class="item active">
-        <img src="Indian-children.jpg" width=100% style="opacity:0.6;" alt="Chania" height=80%>
+        <img src="DSC_0447a.jpg"  style="opacity:0.6;" alt="Chania" width=100% id="pic">
         <div class="carousel-caption" >
-          <h1 id="h1" class="slideanim">Reliable</h1>
-          <h4 style="font-style:italic;" id="h4" class="slideanim">You may forget, But we remember!</h4>
+          <h1 id="h1">Reliable</h1>
+          <h4 style="font-style:italic;" id="h4">You may forget, But we remember!</h4>
         </div>
       </div>
 
@@ -348,7 +350,7 @@ $(document).ready(function(){
 var target = $("#about").offset().top;
   var interval = setInterval(function() {
     if ($(window).scrollTop() >= target) {
-         $(".navbar").delay(0).animate({ backgroundColor: "rgba(244,81,30,0.7)"},"fast");
+         $(".navbar").delay(0).animate({ backgroundColor: "rgba(244,81,30,0.9)"},"fast");
         clearInterval(interval);
     }
     else{
@@ -367,6 +369,21 @@ var target = $("#about").offset().top;
       $(".navbar").animate({ backgroundColor: "rgb(244,81,30)"},"fast");
     }
   }, 250);
+</script>
+<script type="text/javascript">
+if (matchMedia) {
+  const mq = window.matchMedia("(min-width: 500px)");
+  mq.addListener(WidthChange);
+  WidthChange(mq);
+}
+
+// media query change
+function WidthChange(mq) {
+
+  const msg = (mq.matches ? "DSC_0447a.jpg" : "http://sincerestudents.yolasite.com/resources/indian%20education%20system%20pic.jpg.opt396x508o0%2C0s396x508.jpg");
+  document.getElementById("pic").src = msg;
+
+}
 </script>
 </body>
 </html>

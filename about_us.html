@@ -13,9 +13,13 @@
   <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
-
+  <style type="text/css">
+  .curr{
+    color:#f4511e;
+  }
+  </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="30" >
+<body id="myPage" >
 
 <nav class="navbar navbar-default navbar-fixed-top" id="navig">
   <div class="container">
@@ -30,63 +34,16 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="newfront.html">HOME</a></li>
-        <li><a href="#mypage">ABOUT</a></li>
-        <li><a href="#services">INITIATIVES</a></li>
-        <li><a href="#portfolio">WHO WE ARE</a></li>
-        <li><a href="#pricing">HOW CAN YOU HELP</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#" class="curr" style="color:red !important;">ABOUT</a></li>
+        <li><a href="init.html">INITIATIVES</a></li>
+        <li><a href="children.html">LITTLE ONES</a></li>
+        <li><a href="Gallery-master/index.html">GALLERY</a></li>
+        <li><a href="list_member.php">VOLUNTEERS</a></li>
+        <li><a href="donation.html">DONATE</a></li>
       </ul>
     </div>
   </div>
 </nav>
-
-<div class="row" style="padding:0px;margin:0px;top:0px;">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top:0px;padding:0px;background-color:black;width:100%;">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-
-      <div class="item active">
-        <img src="Indian-children.jpg" width=100% style="opacity:0.6;" alt="Chania" height=80%>
-        <div class="carousel-caption" >
-          <h1 id="h1" class="slideanim">Reliable</h1>
-          <h4 style="font-style:italic;" id="h4" class="slideanim">You may forget, But we remember!</h4>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="Indian-children(1).jpg" width=100% style="opacity:0.6;" alt="Chania">
-        <div class="carousel-caption">
-          <h1>Fullproof</h1>
-          <h4 style="font-style:italic;">Our double hash key encrypted datbase system provides full proof security to your accounts.</h4>
-        </div>
-      </div>
-    
-      <div class="item">
-        <img src="home.jpg" style="opacity:0.6;" alt="Chania" width=100%>
-        <div class="carousel-caption">
-          <h1>Secured</h1>
-          <h4 style="font-style:italic;">You can bank on us and believe that we won't fail your belief.</h4>
-        </div>
-      </div>
-    </div>
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
 
 
 
@@ -350,10 +307,12 @@ var target = $("#about").offset().top;
   var interval = setInterval(function() {
     if ($(window).scrollTop() >= target) {
          $(".navbar").delay(0).animate({ backgroundColor: "rgba(244,81,30,0.7)"},"fast");
+         $(".curr").delay(0).animate({backgroundColor:"white"},"fast");
         clearInterval(interval);
     }
     else{
       $(".navbar").delay(0).animate({backgroundColor: "rgba(244,81,30,0)"},"fast");
+      $(".curr").delay(0).animate({backgroundColor:"rgba(0,0,0,0)"},"fast");
     }
   },250);
 </script>
@@ -361,11 +320,13 @@ var target = $("#about").offset().top;
 var target = $("#about").offset().top;
   var interval = setInterval(function() {
     if ($(window).scrollTop() < target) {
-         $(".navbar").animate({backgroundColor: "rgba(244,81,30,0)"},"fast");
+         $(".navbar").delay(0).animate({backgroundColor: "rgba(244,81,30,0)"},"fast");
+         $(".curr").delay(0).animate({backgroundColor:"rgba(0,0,0,0)"},"fast");
         clearInterval(interval);
     }
     else{
-      $(".navbar").animate({ backgroundColor: "rgba(244,81,30,0.7)"},"fast");
+      $(".navbar").delay(0).animate({ backgroundColor: "rgba(244,81,30,0.7)"},"fast");
+      $(".curr").delay(0).animate({backgroundColor:"white"},"fast");
     }
   }, 250);
 </script>
