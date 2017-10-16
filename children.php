@@ -1,20 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>RooH - Ek Muheem</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-
-  <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -62,12 +48,6 @@ if($cnt>0)
 	echo "</div>";
 }
 ?>
-
-
-
-
-	}
-}
-?>	
+	
 </body>
 </html>
