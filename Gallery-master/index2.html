@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<!--
+/*
+ * blueimp Gallery Demo
+ * https://github.com/blueimp/Gallery
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * https://opensource.org/licenses/MIT
+ */
+-->
+<html lang="en">
+<head>
+<!--[if IE]>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+<meta charset="utf-8">
+<title>BDC '16 | Gallery | Rooh - Ek Muheem</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/blueimp-gallery.min.css">
+<style type="text/css">
+</style>
+<style type="text/css">
+  .curr{
+    color:#f4511e;
+    background-color: white !important;
+  }
+  .navbar{
+    background-color: rgba(244,81,30,0.9) !important;
+  }
+  h1,h4 {
+    color:white;
+  }
+  </style>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body id="myPage" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navig">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="newfront.html"><img src="../logo.png" height=35px></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../newfront.html">HOME</a></li>
+        <li><a href="../about_us.html">ABOUT</a></li>
+        <li><a href="../init.html">INITIATIVES</a></li>
+        <li><a href="../children.html">LITTLE ONES</a></li>
+        <li><a href="gallery.html"  class="curr"  style="color:red !important;">EVENT GALLERY</a></li>
+        <li><a href="../supporters.html">SUPPORTERS</a></li>
+        <li><a href="../donation.html">DONATE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+<div class="container-fluid" id="init">
+
+<h2>Swacch Bharat Abhiyaan Drive</h2>
+<p style="width:40%;float:left;color:black;margin-left:0px;">In support of the Prime Minister of India's pet project Swacch Bharat Abhiyaan, a team of Rooh volunteers and members of cultural clubs of the college conducted a cleaniness and sanitation drive in and around the Brahma Sarovar complex. The event was coordinated by the Hope foundation from Meerut which has undertaken not only the cleaniness but also the beautification of the public places<br><br><br>
+We also undertook the beautification of the Brahma Sarovar with the Fine Arts club of NIT Kurukshetra in conjuncture with the team of Hope painting the dirty walls of Brahma Sarovar with exquisite artworks.</p>
+<!-- The container for the list of example images -->
+<div id="links" style="width:60%;float:left;text-align:center;">
+<div id="links">
+    <a href="./images/SBA/SBA1.jpg" title="Banana">
+        <img src="./images/SBA/SBA1.jpg" alt="Banana" style="height:100px;width:150px;">
+    </a>
+    <a href="images/SBA/SBA2.jpg" title="Banana">
+        <img src="images/SBA/SBA2.jpg" alt="Banana" style="height:100px;width:150px;">
+    </a>
+    <a href="images/SBA/SBA3.jpg" title="Banana">
+        <img src="images/SBA/SBA3.jpg" alt="Banana" style="height:100px;width:150px;">
+    </a>
+    <a href="images/SBA/SBA4.jpg" title="Banana">
+        <img src="images/SBA/SBA4.jpg" alt="Banana" style="height:100px;width:150px;">
+    </a>
+</div>
+</div>
+</div>
+<script src="js/blueimp-gallery.min.js"></script>
+<script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
+</body>
+</html>
